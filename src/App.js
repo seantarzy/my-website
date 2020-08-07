@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Projects from './projects';
+import Blogs from './blogs';
 
 class App extends React.Component{
 
@@ -11,6 +12,7 @@ render(){
     <div>
     <div>
         <Projects/>
+        <Blogs/>
     </div>
     <div className="App">
       <header className="App-header">

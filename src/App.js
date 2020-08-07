@@ -4,7 +4,7 @@ import './App.css';
 import Projects from './projects';
 import Blogs from './blogs';
 import Videos from './videos';
-
+import Contact from './contact'
 
 
 class App extends React.Component{
@@ -17,6 +17,7 @@ render(){
         <Projects/>
         <Blogs/>
         <Videos/>
+        <Contact/>
     </div>
     <div className="App">
       <header className="App-header">

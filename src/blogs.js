@@ -1,4 +1,5 @@
 import React from 'react'
+import blogImage from './assets/blog-image.jpg' 
 
 export default function Blogs (){
     return (

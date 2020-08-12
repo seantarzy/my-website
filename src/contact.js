@@ -1,12 +1,21 @@
 import React from 'react'
-import contactImage from './assets/contactt-image.jpg' 
+import Card from 'react-bootstrap/Card'
+import contactImage from './assets/contact-image.jpg' 
 
 export default function Contact(){
 
 
 return (
-    <div className="card">
-<p>Contact</p>
-</div>
+    <Card>
+        <Card.Img variant="top" src={contactImage} style={{ height: 100, width: 100 }} />
+        <Card.Body>
+            <Card.Title>Contact</Card.Title>
+            <Card.Text>
+                contact me
+      </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+        </Card.Footer>
+    </Card>
 )
 }

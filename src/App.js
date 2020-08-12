@@ -9,15 +9,30 @@ import Contact from './contact'
 
 class App extends React.Component{
 
+  state = {
+      projects: [],
+      blogs: [],
+      videos: [],
+      contact: []
+  }
+
+  componentDidMount=()=>{
+    console.log(this.state)
+    console.log("yo")
+
+  }
 render(){
+
+
+
 
   return (    
     <div>
     <div>
-        <Projects/>
-        <Blogs/>
-        <Videos/>
-        <Contact/>
+        <Projects projects ={this.state.projects}/>
+        <Blogs blogs={this.state.blogs}/>
+        <Videos videos={this.state.videos}/>
+        <Contact contact={this.state.contact}/>
     </div>
     <div className="App">
       <header className="App-header">

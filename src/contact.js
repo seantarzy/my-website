@@ -4,7 +4,7 @@ export default function Contact(){
 
 
 return (
-<div>
+    <div className="card">
 <p>Contact</p>
 </div>
 )

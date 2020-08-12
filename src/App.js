@@ -5,7 +5,7 @@ import Projects from './projects';
 import Blogs from './blogs';
 import Videos from './videos';
 import Contact from './contact'
-
+import './componentStyles.css'
 
 class App extends React.Component{
 
@@ -20,19 +20,29 @@ class App extends React.Component{
     console.log(this.state)
     console.log("yo")
 
+
+  }
+
+  styles = {
+    height: 20,
+    width: 20
   }
 render(){
 
+  const divStyle = {
+    height: 20,
+    color: 'blue',
 
+  };
 
 
   return (    
     <div>
     <div>
-        <Projects projects ={this.state.projects}/>
-        <Blogs blogs={this.state.blogs}/>
-        <Videos videos={this.state.videos}/>
-        <Contact contact={this.state.contact}/>
+        <Projects projects={this.state.projects}/>
+        <Blogs blogs={this.state.blogs} className="card"/>
+        <Videos videos={this.state.videos} className="card"/>
+        <Contact contact={this.state.contact} className="card"/>
     </div>
     <div className="App">
       <header className="App-header">

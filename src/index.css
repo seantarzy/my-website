@@ -12,3 +12,7 @@ code {
     monospace;
 }
 
+.card{
+  width: 20;
+  height: 20
+}

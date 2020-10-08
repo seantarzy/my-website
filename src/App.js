@@ -19,8 +19,6 @@ class App extends React.Component{
   componentDidMount=()=>{
     console.log(this.state)
     console.log("yo")
-
-
   }
 
   styles = {

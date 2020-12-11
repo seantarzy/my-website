@@ -2,18 +2,21 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import blogImage from './assets/blog-image.jpg' 
 
-export default function Blogs (){
+export default function Blogs (props){
+    
     return (
-        <Card>
-            <Card.Img variant="top" src={blogImage} style={{ height: 100, width: 100 }} />
-            <Card.Body>
-                <Card.Title>Blogs</Card.Title>
-                <Card.Text>
-                    These are my blogs
-      </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-            </Card.Footer>
-        </Card>
-    )
-}
+      <div className = "card">
+      <br>
+      </br>
+      <a href = {props.blog.link} target = "_blank">
+        <img
+          variant="top"
+          src={props.blog.imageSrc}
+          style={{ height: 100, width: 100 }}
+        />
+        </a>
+        <footer className = "card-footer">{props.blog.title}</footer>
+      </div>
+    );
+
+  }

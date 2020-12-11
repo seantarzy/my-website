@@ -5,6 +5,7 @@ import Projects from './projects';
 import Blogs from './blogs';
 import Videos from './videos';
 import Contact from './contact'
+import Bio from './Bio'
 import './componentStyles.css'
 
 class App extends React.Component{
@@ -40,9 +41,10 @@ render(){
         Sean Tarzy's Portfolio
       </header>
     <div>
+        <Bio/>
         <Projects projects={this.state.projects}/>
-        <Blogs blogs={this.state.blogs} className="card"/>
-        <Videos videos={this.state.videos} className="card"/>
+        {/* <Blogs blogs={this.state.blogs} className="card"/> */}
+        {/* <Videos videos={this.state.videos} className="card"/> */}
         <Contact contact={this.state.contact} className="card"/>
     </div>
     </div>

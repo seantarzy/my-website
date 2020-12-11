@@ -45,8 +45,6 @@ render(){
         <Videos videos={this.state.videos} className="card"/>
         <Contact contact={this.state.contact} className="card"/>
     </div>
-    <div className="App">
-    </div>
     </div>
 )
   };

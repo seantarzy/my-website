@@ -35,7 +35,10 @@ render(){
 
 
   return (    
-    <div>
+    <div className = "whole-app">
+      <header className="App-header">
+        Sean Tarzy's Portfolio
+      </header>
     <div>
         <Projects projects={this.state.projects}/>
         <Blogs blogs={this.state.blogs} className="card"/>
@@ -43,20 +46,6 @@ render(){
         <Contact contact={this.state.contact} className="card"/>
     </div>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Sean Tarzy <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Learn React
-        </a>
-      </header>
     </div>
     </div>
 )

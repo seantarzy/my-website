@@ -11,7 +11,7 @@ export default function Projects() {
         style={{ height: 100, width: 100 }}
       />
       <Card.Body>
-        <Card.Title>Blogs</Card.Title>
+        <Card.Title>Projects</Card.Title>
         <Card.Text>These are my projects</Card.Text>
       </Card.Body>
       <Card.Footer></Card.Footer>

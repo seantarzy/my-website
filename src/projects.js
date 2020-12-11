@@ -2,21 +2,25 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import projectImage from "./assets/project-image.jpg";
 import mnemonicMaker from './assets/mnemonic-maker.png'
-export default function Projects() {
-  return (
-    <Card>
-    <Card.Title>Projects:</Card.Title>
-    <br>
-    </br>
+import './App.css'
+export default function Projects(props) {
 
-      <Card.Img
-        variant="top"
-        src={mnemonicMaker}
-        style={{ height: 100, width: 100 }}
-      />
-      <Card.Body>
-      </Card.Body>
-      <Card.Footer>Mnemonic Maker</Card.Footer>
-    </Card>
-  );
-}
+
+
+    return (
+      <div className = "card">
+      <br>
+      </br>
+      <a href = {props.project.link} target = "_blank">
+        <img
+          variant="top"
+          src={props.project.imageSrc}
+          style={{ height: 100, width: 100 }}
+        />
+        </a>
+        <footer className = "card-footer">{props.project.name}</footer>
+      </div>
+    );
+
+  }
+

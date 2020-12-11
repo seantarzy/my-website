@@ -17,11 +17,6 @@ class App extends React.Component{
       contact: []
   }
 
-  componentDidMount=()=>{
-    console.log(this.state)
-    console.log("yo")
-  }
-
   styles = {
     height: 20,
     width: 20
@@ -33,20 +28,16 @@ render(){
     color: 'blue',
 
   };
-
-
   return (    
     <div className = "whole-app">
       <header className="App-header">
         Sean Tarzy's Portfolio
       </header>
-    <div>
         <Bio/>
         <Projects projects={this.state.projects}/>
         {/* <Blogs blogs={this.state.blogs} className="card"/> */}
         {/* <Videos videos={this.state.videos} className="card"/> */}
-        <Contact contact={this.state.contact} className="card"/>
-    </div>
+        <Contact contact={this.state.contact}/>
     </div>
 )
   };
